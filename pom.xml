@@ -3,4 +3,21 @@
   <groupId>com.sample</groupId>
   <artifactId>jenkinsMaven</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <mainClass>jenkinsMaven.HelloTest</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
